@@ -1,0 +1,36 @@
+.heading{
+    padding-left: 25px;
+}
+.speed{
+    margin-left:25px;
+    padding-left: 20px;
+    margin-top: 30px;
+    border:1px solid #f1f1f1;
+    border-left-color: #00a300;
+    border-left-width: 15px;    
+}
+.speed h3{
+    color: #00a300
+}
+.i2c{
+    margin-left:25px;
+    padding-left: 20px;
+    margin-top: 30px;
+    border:1px solid #f1f1f1;
+    border-left-color: #ffc30d;
+    border-left-width: 15px;    
+}
+.i2c h3{
+    color: #ffc30d;
+}
+.uart{
+    margin-left:25px;
+    padding-left: 20px;
+    margin-top: 30px;
+    border:1px solid #f1f1f1;
+    border-left-color: #2d89ef;
+    border-left-width: 15px;    
+}
+.uart h3{
+    color: #2d89ef;
+}

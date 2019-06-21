@@ -1,0 +1,44 @@
+li{
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: 1px solid;
+    margin-right: 7px;
+    font-size: 24px;
+    line-height: 50px;
+}
+.hide li{    
+    display:inline-block;
+}
+
+.home{
+    border-color: #2d89ef;
+}
+.home:hover{
+    color:#2d89ef;
+}
+.products{
+    border-color:#603cb9;
+}
+.products:hover{
+    color:#603cb9;
+}
+.services{
+    border-color:#01a31b;
+}
+.services:hover{
+    color:#01a31b;
+}
+
+.about{
+    border-color:#d34925;
+}
+.about:hover{
+    color:#d34925;
+}
+
+.contact{
+    border-color:#efa327;
+}
+.contact:hover{
+    color:#efa327;
+}

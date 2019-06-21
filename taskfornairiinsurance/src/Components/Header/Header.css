@@ -1,0 +1,77 @@
+.hidden{
+    display: none;
+}
+.fa-bars{
+    color: white;
+    }
+
+.main{
+    flex-direction: column;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+}
+.logo{
+    margin-right: 50px;
+    padding-right:60px;
+
+}
+.after-nav{
+    font-size: 36px;
+    line-height: 50px;
+    font-family: "Segoe UI";
+    font-weight: 300;
+    margin-right: 118px;    
+}
+.price-part{
+    background-color: #0064cd;
+    
+}
+.price-part a{
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    width: 180px;
+}
+.price img{
+    margin-right: 5px;
+}
+.input-field{
+    position: relative;
+}
+.search {
+    border:none;
+    border:1px solid#ccc;
+    width: 228px;
+    font-size:14px;
+    background-position: right center;
+    background-image: url("../../images/search.png"); 
+    background-repeat: no-repeat;
+    padding: 11px;    
+    margin: 5px 15px 5px 35px;
+}
+@media only screen and (max-width: 768px) {
+    .fa-bars{
+        color: #585655;
+        padding: 4%;
+    }
+    .hide{
+        display: none;
+    }
+    .hidden{
+        width: 150px;
+    }
+     #menu li{
+        display: block;
+    }
+    .nav-menu:nth-child(2){
+        flex-direction: column; 
+    }
+    .after-nav{
+        font-size: 24px;
+    }
+}
