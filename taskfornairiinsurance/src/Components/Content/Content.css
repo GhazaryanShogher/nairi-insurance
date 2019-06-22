@@ -76,7 +76,8 @@
 .second, .green,.blue,.yellow{
     display:flex;
 }
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 1220px) {
     .about-product{
         flex-direction: column;
         justify-content: center;
@@ -86,4 +87,5 @@
     .product{
         margin:30px 0;
     }
-}
+  }
+

@@ -8,16 +8,15 @@ import './Contact.css'
 class Contact extends Component{
     render () {
         return (
-            <div>
-                
-                <div className="contact">
-                    <div className="tooltip">
-                        <Icon className={"fa fa-paper-plane-o fa-2x"} aria-hidden="true"/>
-                        <div>
-                            <H3 heading={"Форма обратной связи"}/>
-                            <p>разработка, модификация или просто вопросы по модулю...</p>
-                        </div>
+            <div className="form">
+                <div className="tooltip">
+                    <Icon className={"fa fa-paper-plane fa-2x"} aria-hidden="true"/>
+                    <div>
+                        <H3 heading={"Форма обратной связи"}/>
+                        <p>разработка, модификация или просто вопросы по модулю...</p>
                     </div>
+                </div>                
+                <div className="contact">                    
                     <div className="submit">
                         <div className="first-part">
                             <select>
@@ -25,12 +24,12 @@ class Contact extends Component{
                                 <option>1</option>
                                 <option>2</option>
                             </select>
-                            <Input placeholder={"Имя *"}/> 
-                            <Input placeholder={"E-mail *"}/> 
-                            <Input placeholder={"Телефон"}/> 
+                            <Input placeholder={"Имя *"} value={"Имя *"}/> 
+                            <Input placeholder={"E-mail *"} value={"E-mail *"}/> 
+                            <Input placeholder={"Телефон"} value={"Телефон"}/> 
                         </div>
                         <div className="first-part">
-                            <textarea placeholder="Сообщение *"></textarea>
+                            <textarea placeholder="Сообщение *" value="Сообщение *"></textarea>
                             <Input type={"button"} value={"Отправить"}/>
                         </div>
                     </div>              

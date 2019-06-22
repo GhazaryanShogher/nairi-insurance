@@ -26,12 +26,16 @@
 .uart{
     margin-left:25px;
     padding-left: 20px;
+    padding-bottom: 15px;
     margin-top: 30px;
     border:1px solid #f1f1f1;
     border-left-color: #2d89ef;
-    border-left-width: 15px;    
+    border-left-width: 15px;
+    margin-bottom: 40px;  
 }
 .uart h3{
     color: #2d89ef;
-    margin-bottom: 40px;
+}
+.text{
+    width: 78vw;
 }

@@ -6,7 +6,7 @@ import './Text.css'
 class Text extends Component{
     render () {
         return (
-            <div>
+            <div className="text"> 
                 <div className="heading">
                     <H3 heading={"Описание продукта"}></H3>
                     <Div text={

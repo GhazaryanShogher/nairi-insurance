@@ -1,34 +1,77 @@
 .tooltip{
-    margin: 40px 25px 0 50px;
-    width: 82vw;
-    height: 120px;
+    height: 74px;
     display: flex;
     background-color: #c3325f;
     color: white;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 86%, 12% 86%, 10% 100%, 9% 86%, 0 86%);    
-    /* display: flex; */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 86%, 12% 86%, 10% 100%, 9% 86%, 0 86%);  
 }
 .tooltip i{
     transform: rotate(-90deg);
-    margin: 38px 18px;
+    margin: 0 0px 18px 30px;;
 }
 .contact{
     background-color: #f1f1f1;
     padding: 15px 25px;
 }
+.form{
+    background-color: #f1f1f1;
+    margin-left: 22px;
+    width: 76vw;
+}
 .contact input,select{
     padding: 5px;
-    width: 285px;
+    width: 290px;
     height: 21px;
     margin-bottom: 19px;
 }
 select{
-    padding: 11px;
+    padding: 0 11px;
+    height: 31px;
+    width: 304px;
 }
-.contact,.first-part{    
+.contact,.first-part,.form{    
     display: flex;
     flex-direction: column;
 }
 .submit{
     display: flex;
+    box-sizing: border-box;
+}
+.submit .first-part:first-child{
+    margin-right: 33px;
+}
+textarea{
+    width: 45vw;
+    height: 136px;
+}
+.tooltip p, .tooltip h3{
+    margin: 3px;
+}
+input[type="button"]{
+    background-color: #c3325f;
+    padding: 7px 10px;
+    width: 105px;
+    height: 21px;
+    margin-top: 19px;
+    outline: none;
+    border: none;
+    color: white;
+    padding-bottom: 25px;
+}
+@media only screen and (max-width: 1220px) {
+    .submit{
+        flex-direction: column;
+    }
+    .form, .text{
+        width: 90vw;
+    }
+  }
+
+@media only screen and (max-width: 768px) {
+    .submit{
+        flex-direction: column;
+    }
+    textarea{
+        width: 310px;
+    }
 }

@@ -9,7 +9,7 @@ class Input extends Component {
   render() {
     return (
       <Fragment>
-          <input value = {this.props.val} id={this.props.id} display = {this.props.display} className={this.props.className} type={this.props.type} placeholder={this.props.placeholder} required onChange = {this.props.callback}/>
+          <input value = {this.props.value} id={this.props.id} display = {this.props.display} className={this.props.className} type={this.props.type} placeholder={this.props.placeholder} required onChange = {this.props.callback}/>
       </Fragment>
     );
   }
