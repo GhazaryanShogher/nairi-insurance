@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import Div from '../Div/Div';
+import H3 from '../H3/H3';
 import Icon from '../Icon/Icon';
 import download from '../../images/download2.png';
 import product from '../../images/product.png';
@@ -15,7 +16,7 @@ class Content extends Component{
                     <div className="violet">
                         <div className="describtion">
                             <img src={product} alt="product"></img>
-                            <p>Описание продукт</p>
+                            <H3 heading={"Описание продукт"}/>
                         </div>
                         <div className="arrow">
                             <Icon className={"fa fa-arrow-circle-o-right fa-2x"} aria-hidden="true"/>
@@ -25,22 +26,30 @@ class Content extends Component{
                         <div >
                             <div className="green">
                                 <img src={download} alt="download"></img>
-                                <p>Скачать
-                                <p className="font-size">Докум-ция, программы и драйверы</p>
-                                </p>
+                                <div>
+                                    <H3 heading={"Скачать"}/>
+                                    <p className="font-size">Докум-ция, программы и драйверы</p>
+                                </div>
                             </div>
                             <div className="blue">
                                 <img src={example} alt="example"></img>
-                                <p>Примеры 
+                                <div>
+                                    <H3 heading={"Примеры"}/> 
                                     <p>C# API</p>
-                                </p>
+                                </div>
                             </div>                            
                         </div>
                         <div className="yellow">
-                            <img src={video} alt="prvideooduct"></img>
-                            <p>Видео
-                                <p></p>
-                            </p>
+                            <div className="describtion">
+                                <img src={video} alt="prvideooduct"></img>
+                                <div>                                
+                                    <H3 heading={"Видео"}/>
+                                    <p>Смотреть</p>
+                                </div>
+                            </div>
+                            <div className="arrow">
+                                <Icon className={"fa fa-arrow-circle-o-right fa-2x"} aria-hidden="true"/>
+                            </div>
                         </div>
                     </div>
                 </div>              

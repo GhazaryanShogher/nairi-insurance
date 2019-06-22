@@ -44,15 +44,13 @@ class Header extends Component{
                     </Div>
                 </div>
                 <div className="nav-menu">
-                        <Div className="after-nav" text={"Assistant Interface Debugger"}/>
-                        <div className="nav-menu">
-                            <Div className="price-part" text={<a href="#" download><img src={price} alt="price list"></img>Скачать наш прайс</a>}></Div>
-                            <Input className={"search"} placeholder={`Поиск по сайту`}/>
-                        </div>
-                </div>           
-                
+                    <Div className="after-nav" text={"Assistant Interface Debugger"}/>
+                    <div className="nav-menu">
+                        <Div className="price-part" text={<a href="#" download><img src={price} alt="price list"></img>Скачать наш прайс</a>}></Div>
+                        <Input className={"search"} placeholder={`Поиск по сайту`}/>
+                    </div>
+                </div> 
             </div>
-            // clip-path: polygon(0 48%, 100% 48%, 100% 75%, 36% 75%, 0 100%, 15% 75%, 0% 75%);
         );
 
     }

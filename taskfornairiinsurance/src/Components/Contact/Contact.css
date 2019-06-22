@@ -1,0 +1,12 @@
+.tooltip{
+    width: 1105px;
+    height: 120px;
+    display: flex;
+    background-color: #c3325f;
+    color: white;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 86%, 12% 86%, 10% 100%, 9% 86%, 0 86%);
+}
+.tooltip i{
+    transform: rotate(-90deg);
+    margin: 38px 18px;
+}
