@@ -28,7 +28,7 @@ class Header extends Component{
                             <Li className={"products"} name={"Продукты"}/>
                             <Li className={"services"} name={"Услуги"}/>
                             <Li className={"about"} name={"О нас"}/>
-                            <Li className={"contact"} name={"Контакты"}/>
+                            <Li className={"contacts"} name={"Контакты"}/>
                     </ul>
                     }>
                     </Div>
@@ -38,7 +38,7 @@ class Header extends Component{
                             <Li className={"products"} name={"Продукты"}/>
                             <Li className={"services"} name={"Услуги"}/>
                             <Li className={"about"} name={"О нас"}/>
-                            <Li className={"contact"} name={"Контакты"}/>
+                            <Li className={"contacts"} name={"Контакты"}/>
                     </ul>
                     }>
                     </Div>
