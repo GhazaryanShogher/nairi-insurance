@@ -1,8 +1,4 @@
-.heading{
-    padding-left: 25px;
-}
 .speed{
-    margin-left:25px;
     padding-left: 20px;
     margin-top: 30px;
     border:1px solid #f1f1f1;
@@ -13,7 +9,6 @@
     color: #00a300
 }
 .i2c{
-    margin-left:25px;
     padding-left: 20px;
     margin-top: 30px;
     border:1px solid #f1f1f1;
@@ -24,7 +19,6 @@
     color: #ffc30d;
 }
 .uart{
-    margin-left:25px;
     padding-left: 20px;
     padding-bottom: 15px;
     margin-top: 30px;

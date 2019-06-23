@@ -6,10 +6,23 @@ import H3 from '../H3/H3';
 import './Contact.css'
 
 class Contact extends Component{
+    state={
+        height:0
+    }
+    showTooltip =()=>{
+        this.setState({
+            height:85
+        })
+    }
+    hideTooltip =()=>{
+        this.setState({
+            height:0
+        })
+    }
     render () {
         return (
-            <div className="form">
-                <div className="tooltip">
+            <div className="form" onMouseLeave={this.hideTooltip}>
+                <div className="tooltip" style={{height: `${this.state.height}px`}}>
                     <Icon className={"fa fa-paper-plane fa-2x"} aria-hidden="true"/>
                     <div>
                         <H3 heading={"Форма обратной связи"}/>
@@ -19,17 +32,17 @@ class Contact extends Component{
                 <div className="contact">                    
                     <div className="submit">
                         <div className="first-part">
-                            <select>
+                            <select onMouseEnter={this.showTooltip}>
                                 <option>Выберите тип обращения</option>
                                 <option>1</option>
                                 <option>2</option>
                             </select>
-                            <Input placeholder={"Имя *"} value={"Имя *"}/> 
-                            <Input placeholder={"E-mail *"} value={"E-mail *"}/> 
-                            <Input placeholder={"Телефон"} value={"Телефон"}/> 
+                            <Input placeholder={"Имя *"}/> 
+                            <Input placeholder={"E-mail *"}/> 
+                            <Input placeholder={"Телефон"}/> 
                         </div>
                         <div className="first-part">
-                            <textarea placeholder="Сообщение *" value="Сообщение *"></textarea>
+                            <textarea placeholder="Сообщение *"></textarea>
                             <Input type={"button"} value={"Отправить"}/>
                         </div>
                     </div>              

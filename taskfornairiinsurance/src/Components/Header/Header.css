@@ -8,7 +8,7 @@
 .main{
     flex-direction: column;
 }
-.nav-menu{
+.nav-menu,.nav-inputs,.nav{
     display: flex;
     align-items: center;
     justify-content: left;
@@ -29,6 +29,26 @@
 .price-part{
     background-color: #0064cd;
     
+}
+#menu{
+    /* max-height: 160px; */
+    animation: menu 1s linear ;
+    
+}
+@keyframes menu {
+    0%   {height:0px}
+    25%  {height:40px}
+    50%  {height:80px}
+    75%  {height:120px}
+    100% {height:160px}
+  }
+#menu li{    
+    font-size: 18px;
+    font-weight: 500;
+    padding: 3px;
+    margin: 0;
+    width: 100px;
+    line-height: 25px;
 }
 .price-part a{
     color: white;
@@ -54,6 +74,73 @@
     padding: 11px;    
     margin: 5px 15px 5px 35px;
 }
+div.hr{
+    width:70%;
+    }
+    .products1{
+        position: relative;
+    }
+    .products1:after {
+    content:'';
+    position: absolute;
+    border-style: solid;
+    border-width: 7px 7px 0;
+    border-color: #603cb9 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    top: 71px;
+    left: 45%;
+    }
+   
+@media only screen and (max-width:1275px) and (min-width:993px){
+    .nav-menu li{
+        font-size: 18px;
+    }    
+    .logo{
+        margin: 0;
+        padding: 0;
+    }
+    .logo img{
+        width:100%;
+    }
+    .nav{
+        flex-direction: column;
+    }
+    .main{
+        width: 90vw;
+    }
+    .after-nav{
+        margin: 15px 0;
+    }
+}
+
+@media only screen and (max-width:992px) and (min-width:769px){
+    .nav-menu{
+        flex-direction: column;
+    }
+    .nav-menu li{
+        font-size: 18px;
+    }
+    .logo{
+        margin: 0;
+        padding: 0;
+    }
+    .logo img{
+        width:100%;
+    }
+    .nav{
+        flex-direction: column;
+    }
+    .main{
+        width: 90vw;
+    }
+    .after-nav{
+        margin: 15px 0;
+    }
+
+}
+    
 @media only screen and (max-width: 768px) {
     .fa-bars{
         color: #585655;
@@ -68,10 +155,29 @@
      #menu li{
         display: block;
     }
-    .nav-menu:nth-child(2){
+    #menu ul{
+        margin: 0;
+    }
+    .nav,.nav-inputs{
         flex-direction: column; 
     }
     .after-nav{
         font-size: 24px;
+        margin-right: 0;
+    }
+    .search{
+        margin: 25px 0 10px 0;
+    }
+    .logo{
+        margin: 0 0 0 20px;
+        padding-left: 10px;
+    }
+    .logo img{
+        width: 70%;
+    }
+    .nav-menu{
+        align-items: top;
+        justify-content: first baseline;
+        align-items: flex-start;
     }
 }

@@ -12,7 +12,7 @@ class Content extends Component{
     render () {
         return (
             <div className="about-product">
-                <div>
+                <div className="blocks">
                     <div className="violet">
                         <div className="describtion">
                             <img src={product} alt="product"></img>

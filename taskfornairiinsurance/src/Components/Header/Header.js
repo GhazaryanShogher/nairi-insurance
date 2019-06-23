@@ -25,7 +25,8 @@ class Header extends Component{
                     <Div className={"hide"} text = {
                         <ul>
                             <Li className={"home"} name={"Главная"}/>
-                            <Li className={"products"} name={"Продукты"}/>
+                            <Li className={"products1"} name={"Продукты"}>  
+                            <Div className={"hr"}/></Li>   
                             <Li className={"services"} name={"Услуги"}/>
                             <Li className={"about"} name={"О нас"}/>
                             <Li className={"contacts"} name={"Контакты"}/>
@@ -43,9 +44,9 @@ class Header extends Component{
                     }>
                     </Div>
                 </div>
-                <div className="nav-menu">
+                <div className="nav">
                     <Div className="after-nav" text={"Assistant Interface Debugger"}/>
-                    <div className="nav-menu">
+                    <div className="nav-inputs">
                         <Div className="price-part" text={<a href="#" download><img src={price} alt="price list"></img>Скачать наш прайс</a>}></Div>
                         <Input className={"search"} placeholder={`Поиск по сайту`}/>
                     </div>

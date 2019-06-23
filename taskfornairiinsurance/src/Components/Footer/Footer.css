@@ -1,14 +1,19 @@
 .footer{
     margin:40px 0;
-    padding:20px;
     display: flex;
     flex-direction: column;
     background-color: #f1f1f1;
-    margin-left: 22px;
-    width: 74vw;
+    width: 78vw;
+}
+.footer span{
+    padding-left: 20px;
+}
+.footer-text{    
+    background-color: #f1f1f1;    
+    padding:20px 0;
 }
 @media only screen and (max-width: 1220px) {
     .footer{
-        width: 86vw;
+        width: 90vw;
     }
   }

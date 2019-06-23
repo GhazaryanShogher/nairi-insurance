@@ -16,10 +16,10 @@ li{
 .home:hover{
     color:#2d89ef;
 }
-.products{
+.products,.products1{
     border-color:#603cb9;
 }
-.products:hover{
+.products:hover,.products1:hover{
     color:#603cb9;
 }
 .services{
